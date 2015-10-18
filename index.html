@@ -1,0 +1,46 @@
+﻿<!DOCTYPE HTML>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+	<title> GRI calendar Demo </title>
+	<script type="text/javascript" src="./jquery.min.js"></script>
+	<script type="text/javascript" src="./dateRange.js"></script>
+
+
+
+	<link rel="stylesheet" type="text/css" href="./dateRange.css"/>
+
+
+
+
+
+</head>
+
+<body bgcolor="white" text="black">
+	<div class="wrapper">
+
+		<input type="text" id="date_demo3" readonly="readonly" >
+		<script type="text/javascript">
+			var dateRange = new pickerDateRange('date_demo3', {
+				isTodayValid : false,
+					// startDate : '2013-04-14',
+					// endDate : '2013-04-21',
+					//needCompare : true,
+					//isSingleDay : true,
+					//shortOpr : true,
+					defaultText : ' 至 ',
+					inputTrigger : 'input_trigger_demo3',
+					success : function(obj) {
+						// console.info(obj);
+					},
+					clear :function(){
+
+						console.info(0);
+					}
+				});
+
+			</script>
+		</div>
+
+	</body>
+	</html>
